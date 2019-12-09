@@ -1,0 +1,19 @@
+.toptext {
+    text-align: center;
+}
+
+
+#hour {
+    line-height: 30px;
+    width: 100%;
+    border: 3px || black;
+}
+
+.p.taskBar {
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid;
+}
