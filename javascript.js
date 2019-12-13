@@ -51,8 +51,7 @@ $(document).ready(function () {
 
     $("input").each(function () {
         var timeMT = $(this).attr("mt");
-        // var currentTime = moment().format('H');
-        var currentTime = "12";
+        var currentTime = moment().format('H');
 
         if (timeMT > currentTime) {
             $(this).css("background-color", "Gainsboro");
