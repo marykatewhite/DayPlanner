@@ -4,8 +4,9 @@ $(document).ready(function () {
     var submitBtn = $(".btn");
 
     function showTheTime() {
+        var d = moment().format('LL');
         var m = moment().format('hh:mm:ss a');
-        document.getElementById("today").innerHTML = m;
+        document.getElementById("today").innerHTML = d + " " + m;
     }
 
     showTheTime();
@@ -52,6 +53,8 @@ $(document).ready(function () {
     $("input").each(function () {
         var timeMT = $(this).attr("mt");
         var currentTime = moment().format('H');
+        // console.log(timeMT);
+        // console.log(currentTime);
 
         if (timeMT > currentTime) {
             $(this).css("background-color", "Gainsboro");
